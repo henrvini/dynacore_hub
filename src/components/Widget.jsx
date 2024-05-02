@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Box, Grid, Typography } from '@mui/material';
 import { useDispatch } from 'react-redux';
-import { remove } from '../../store/counterSlice';
+import { remove } from '../../store/dataBuffer';
 import socket from '../utils/socketConnection';
 import Cpu from './Cpu';
 import Mem from './Mem';

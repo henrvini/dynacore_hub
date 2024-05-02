@@ -2,13 +2,13 @@ import React from 'react';
 import './App.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { Container, Typography } from '@mui/material';
-import { update } from '../store/counterSlice';
+import { update } from '../store/dataBuffer';
 import { useEffect } from 'react';
 import socket from './utils/socketConnection';
 import Widget from './components/Widget';
 
 function App() {
-    const payload = useSelector((state) => state.counter.value);
+    const payload = useSelector((state) => state.dataBuffer.value);
     const dispatch = useDispatch();
 
     useEffect(() => {
